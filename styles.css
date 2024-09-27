@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b8c2ca; /* Light background color */
+}
+
+.calculator {
+    background-color: #082a40;
+    border-radius: 30px;
+    width: 280px;
+}
+
+.calculator-screen {
+    background: rgb(19,48,60);
+    background: linear-gradient(73deg, rgba(19,48,60,1) 6%, rgba(2,0,36,1) 72%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end; /* Align content horizontally to the right */
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+#calc-display {
+    width: 100%;
+    text-align: right;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    background-color: #082a40;
+    color: #fff;
+}
+
+button.operator {
+    color: #288d8b;
+}
+
+.sqrt {
+    color: #288d8b;
+}
+
+button.clear,
+button.delete {
+    color: rgb(152, 47, 47); /* Red color for clear and delete buttons */
+}
+
+button.equals {
+    border-radius: 20px;
+    background: rgb(68,160,161);
+    background: linear-gradient(0deg, rgba(68,160,161,1) 23%, rgba(69,163,164,1) 41%, rgba(119,229,231,1) 92%, rgba(99,205,207,1) 127%);
+    padding: 10px 10px;
+    width: 50px;
+    height: 50px;
+}
+
+button.equals:hover {
+    color: white;
+}
+
+button:hover {
+    color: #288d8b;
+}
